@@ -25,8 +25,10 @@
 </head>
 <body>
 
+  <a href="#conteudoPrincipal" class="pularNavegacao">Pular para conteúdo principal</a>
+
   <header class="cabecalho container">
-    <a href="#" class="cabecalho-logo" title="Logotipo da Apeperia">
+    <a href="#conteudoPrincipal" class="cabecalho-logo" title="Home Apeperia">
         <svg width="205" height="59" viewBox="0 0 205 59" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
           <title>Logotipo da Apeperia</title>
           <!-- <desc>Created using Figma</desc> -->
@@ -63,10 +65,10 @@
     </nav>
   </header>
 
-  <main class="conteudo">
+  <main class="conteudo" role="main">
 
     <section class="secaoDestaque">
-      <h1 class="secaoDestaque-titulo">
+      <h1 class="secaoDestaque-titulo" id="conteudoPrincipal">
         APLICATIVOS NA MEDIDA
       </h1>
       <h2 class="secaoDestaque-texto">
@@ -116,7 +118,7 @@
           SOBRE
         </h2>
         <p class="secaoSobre-texto">
-          Criamos aplicativos personalizados de maneira diferente e para <b>todxs</b>!
+          Criamos aplicativos personalizados de maneira diferente e para <b>todas as pessoas</b>!
         </p>
         <p class="secaoSobre-texto">
           Preocupados com o modelo atual em que um aplicativo é criado entregue e a manutenção é vista como um custo extra para o cliente, decidimos criar um novo modelo de negócio, em que você assina nosso serviço, nós criamos o aplicativo e a manutenção já é inclusa no serviço. Dessa maneira você não se preocupa com atualização, é tudo por nossa conta.
@@ -275,22 +277,22 @@
       <div class="container">
         <h2 class="secaoDestaques-titulo tituloPadrao">DESTAQUES</h2>
 
-        <a href="http://blog.apeperia.com.br/design/conheca-primeiras-etapas-criacao-logotipo-teste-teste" class="secaoDestaques-link">
-          <div class="secaoDestaques-destaque">
+        <a href="http://blog.apeperia.com.br/design/conheca-primeiras-etapas-criacao-logotipo-teste-teste" class="secaoDestaques-link" aria-labelledby="tituloDestaque1">
+          <figure class="secaoDestaques-destaque">
             <img src="img/comecando-criar-logotipo.png" class="secaoDestaques-destaque-img" alt="Ferramentas de designer . Ilustração">
-            <p class="secaoDestaques-destaque-titulo"  id="tituloDestaque1">
+            <figcaption class="secaoDestaques-destaque-titulo"  id="tituloDestaque1">
               Conheça as primeiras etapas na criação de um logotipo
-            </p>
-          </div>
+            </figcaption>
+          </figure>
         </a>
 
-        <a href="http://blog.apeperia.com.br/design/dicas-como-fotografar-com-celular" class="secaoDestaques-link">
-          <div class="secaoDestaques-destaque">
+        <a href="http://blog.apeperia.com.br/design/dicas-como-fotografar-com-celular" class="secaoDestaques-link" aria-labelledby="tituloDestaque2">
+          <figure class="secaoDestaques-destaque">
             <img src="img/dicas-fotografia.png" class="secaoDestaques-destaque-img" alt="Mulher empolada mostrando foto em uma câmera para um homem">
-            <p class="secaoDestaques-destaque-titulo"  id="tituloDestaque2">
+            <figcaption class="secaoDestaques-destaque-titulo"  id="tituloDestaque2">
               Veja dicas de como fotografar usando seu celular
-            </p>
-          </div>
+            </figcaption>
+          </figure>
         </a>
 
         <button class="secaoDestaques-form-botao btnPadrao btnPadrao--pequeno" id="abreDialog">
@@ -386,8 +388,8 @@
           </div>
 
           <div class="contatoCampo">
-            <input type="checkbox" checked value="receberDestaques" class="contatoCampo-checkbox">
-            <label class="contatoCampo-label">Receber destaques por email</label>
+            <input type="checkbox" checked value="receberDestaques" class="contatoCampo-checkbox" id="receberEmail">
+            <label class="contatoCampo-label" for="receberEmail">Receber destaques por email</label>
           </div>
 
           <div class="contatoCampo">
